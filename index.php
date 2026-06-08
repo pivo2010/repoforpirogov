@@ -182,7 +182,7 @@ if ($pdo) {
           </form>
 
           <!-- удаление -->
-          <form method="post" style="margin-top:10px;" onsubmit="return confirm('Удалить запись ID <?= (int)$selectedRow['id'] ?>?');">
+          <form method="post" style="margin-top:10px;" onsubmit="return confirm('del row ID <?= (int)$selectedRow['id'] ?>?');">
             <input type="hidden" name="action" value="delete" />
             <input type="hidden" name="id" value="<?= (int)$selectedRow['id'] ?>" />
             <button class="btn btn-danger" type="submit" style="width:100%;">Удалить</button>
